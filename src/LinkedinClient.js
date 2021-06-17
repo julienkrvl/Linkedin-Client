@@ -133,7 +133,7 @@ function processCompanyPage(item, result) {
 		result.companySize = item.staffCountRange.start + (item.staffCountRange.end ? '-' + item.staffCountRange.end : '+') + ' employees';
 		result.membersOnLinkedin = item.staffCount;
 		result.headquarters = item.headquarter;
-		delete result.headquarters.$type;
+		// delete result.headquarters.$type;
 		result.companyType = item.companyType.localizedName;
 		result.foundedYear = item.foundedOn && item.foundedOn.year;
 		result.specialties = item.specialities;
